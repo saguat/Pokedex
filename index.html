@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <title>Pokedex by Saguat</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1>Pokémon Pokédex <br><span class="author-name"><em>by Saguat</em></span></h1>
+
+
+    <div class="pokedex-wrapper">
+      <div class="pokedex-form">
+        <label for="search-input">Search for Pokémon Name or ID:</label>
+        <input type="text" id="search-input">
+        <button id="search-button">Search</button>
+      </div>
+
+      <div class="pokedex-container">
+        <div class="top-container">
+          <div class="pokemon-name-and-id">
+            <span id="pokemon-name"></span>
+            <span id="pokemon-id"></span>
+          </div>
+
+          <div class="pokemon-size">
+            <span id="weight"></span>
+            <span id="height"></span>
+          </div>
+
+          <div id="pokemon-img"></div>
+
+          <div id="types">
+            <p class="type electricity"></p>
+            <p class="type normal"></p>
+          </div>
+        </div>
+
+        <div class="pokedex-grid-container">
+          <div class="pokedex-grid"><strong>Base</strong></div>
+          <div class="pokedex-grid"><strong>Stats</strong></div>
+          <div class="pokedex-grid">HP:</div>
+          <div class="pokedex-grid" id="hp"></div>
+          <div class="pokedex-grid">Attack:</div>
+          <div class="pokedex-grid" id="attack"></div>
+          <div class="pokedex-grid">Defense:</div>
+          <div class="pokedex-grid" id="defense"></div>
+          <div class="pokedex-grid">Sp. Attack:</div>
+          <div class="pokedex-grid" id="special-attack"></div>
+          <div class="pokedex-grid">Sp. Defense:</div>
+          <div class="pokedex-grid" id="special-defense"></div>
+          <div class="pokedex-grid">Speed:</div>
+          <div class="pokedex-grid" id="speed"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
