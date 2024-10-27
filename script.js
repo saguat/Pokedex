@@ -3,7 +3,7 @@ const searchBtn = document.getElementById("search-button");
 const pokemonName = document.getElementById("pokemon-name");
 const pokemonId = document.getElementById("pokemon-id");
 const pokemonWeight = document.getElementById("weight");
-const pokemonHeight = document.getelementById("height");
+const pokemonHeight = document.getElementById("height");
 
 const fetchAllPokemon = async () => {
   try {
