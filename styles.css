@@ -99,6 +99,78 @@ h1 {
   font-size: 0.9rem;
 }
 
+.grass {
+  background-color: #35E983;
+}
+
+.poison {
+  background-color: #A126DE;
+}
+
+.electric {
+  background-color: #F8FF15;
+}
+
+.bug {
+  background-color: #16A437;
+}
+
+.dark {
+  background-color: #808080;
+}
+
+.dragon {
+  background-color: #00CCCC;
+}
+
+.fairy {
+  background-color: #EC2574;
+}
+
+.fighting {
+  background-color: #F07730;
+}
+
+.fire {
+  background-color: #FC4545;
+}
+
+.flying {
+  background-color: #8FC2CE;
+}
+
+.ghost {
+  background-color: #887CD8;
+}
+
+.ground {
+  background-color: #DBA048;
+}
+
+.ice {
+  background-color: #95F5FF;
+}
+
+.normal {
+  background-color: #D7B6A8;
+}
+
+.psychic {
+  background-color: #F92EA1;
+}
+
+.rock {
+  background-color: #CC6600;
+}
+
+.steel {
+  background-color: #7ED57B;
+}
+
+.water {
+  background-color: #0080FF;
+}
+
 .pokedex-grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
