@@ -4,6 +4,8 @@ const pokemonName = document.getElementById("pokemon-name");
 const pokemonId = document.getElementById("pokemon-id");
 const pokemonWeight = document.getElementById("weight");
 const pokemonHeight = document.getElementById("height");
+const pokemonImg = document.getElementById("pokemon-img");
+const pokemonType = document.getElementById("types");
 
 const fetchAllPokemon = async () => {
   try {
@@ -49,10 +51,18 @@ const searchPokemon = async (inputValue) => {
 }
 
 const updatePokemon = (pokemon) => {
+  
+
   pokemonName.textContent = `${pokemon.name.toUpperCase()}`;
   pokemonId.textContent = `#${pokemon.id}`;
   pokemonWeight.textContent = `Weight: ${pokemon.weight}`;
   pokemonHeight.textContent = `height: ${pokemon.height}`;
+  pokemonImg.innerHTML = `<img src="${pokemon.sprites.front_default}" alt="image of ${pokemon.name}">`;
+
+  const pokemonTypes = pokemon.types;
+  pokemonTypes.forEach((el) => pokemonType.innerHTML += `<p class="type ${el.type.name}">${el.type.name.toUpperCase()}</p>`);
+  
+  
 }
 
 const eventFunction = () => {
